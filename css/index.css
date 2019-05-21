@@ -131,8 +131,45 @@ table {
 body {
   background: #D7CEC7;
   color: #565656;
+  margin: 1rem;
+  font-family: 'Raleway', sans-serif;
+}
+h1 {
+  font-size: 6rem;
+  color: #76323F;
+  font-family: 'Bitter', serif;
 }
 /*components*/
+img {
+  width: 100%;
+  height: 20rem;
+}
+.headerNav {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+}
+.headerNav h1 {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 20rem;
+  margin-top: 5rem;
+}
+.headerNav img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+.headerNav nav {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .card-container {
   display: flex;
 }

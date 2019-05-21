@@ -139,22 +139,28 @@ h1 {
   color: #76323F;
   font-family: 'Bitter', serif;
 }
-/*components*/
-img {
-  width: 100%;
-  height: 20rem;
+a {
+  color: #76323F;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
 }
+a:hover {
+  border: 0.2rem solid #76323F;
+}
+/*components*/
 .headerNav {
   position: relative;
   overflow: hidden;
   height: 30rem;
+  border: 3px solid #76323F;
 }
 .headerNav h1 {
   position: relative;
   width: 100%;
   text-align: center;
-  height: 20rem;
-  margin-top: 5rem;
+  height: 16rem;
+  margin-top: 9rem;
 }
 .headerNav img {
   position: absolute;
@@ -162,7 +168,7 @@ img {
   top: 0;
   width: 100%;
   height: auto;
-  opacity: 0.6;
+  opacity: 0.35;
 }
 .headerNav nav {
   position: relative;
@@ -176,4 +182,23 @@ img {
 .card-container .card {
   display: flex;
   width: 40%;
+}
+.hero {
+  width: 100%;
+}
+.banner {
+  width: 100%;
+  height: auto;
+}
+.bottomSec .infoDiv {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.bottomSec .infoDiv img {
+  width: 30rem;
+}
+.bottomSec .infoDiv p {
+  width: 40%;
+  color: blue;
 }

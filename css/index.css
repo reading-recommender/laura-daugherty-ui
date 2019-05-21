@@ -128,8 +128,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-html {
-  background: purple;
-  color: green;
+body {
+  background: #D7CEC7;
+  color: #565656;
 }
 /*components*/
+.card-container {
+  display: flex;
+}
+.card-container .card {
+  display: flex;
+  width: 40%;
+}

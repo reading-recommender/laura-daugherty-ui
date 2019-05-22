@@ -131,12 +131,226 @@ table {
 body {
   background: #D7CEC7;
   color: #565656;
+  font-family: 'Raleway', sans-serif;
+}
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+}
+h1 {
+  font-size: 5rem;
+  color: #76323F;
+  font-family: 'Bitter', serif;
+}
+a {
+  color: #76323F;
+  text-decoration: none;
+  padding: 0.5rem;
+  font-weight: bold;
+  margin: 0.5rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  a {
+    background-color: #565656;
+    margin: 0;
+    color: #D7CEC7;
+  }
+}
+a:hover {
+  border: 3px solid #76323F;
+}
+@media (max-width: 800px) {
+  a:hover {
+    border: 3px solid #76323F;
+  }
+}
+@media (max-width: 500px) {
+  a:hover {
+    border: none;
+    border-bottom: 0.2rem solid #C09F80;
+    border-top: 0.2rem solid #C09F80;
+  }
 }
 /*components*/
-.card-container {
+.headerNav {
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #76323F;
   display: flex;
+  flex-flow: column;
+  margin: 2%;
 }
-.card-container .card {
+@media (max-width: 500px) {
+  .headerNav {
+    border: none;
+    margin: 0;
+  }
+}
+.headerNav img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.35;
+}
+.headerNav nav {
+  position: relative;
+  width: 100%;
   display: flex;
-  width: 40%;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .headerNav nav {
+    flex-flow: column;
+    text-align: center;
+    border: none;
+  }
+}
+.fullName {
+  position: relative;
+  text-align: center;
+  padding: 5%;
+}
+@media (max-width: 800px) {
+  .fullName {
+    display: none;
+  }
+}
+.logo {
+  position: relative;
+  display: none;
+  font-size: 6rem;
+}
+@media (max-width: 800px) {
+  .logo {
+    display: flex;
+    text-align: center;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .logo p {
+    border: 3px solid #76323F;
+    border-radius: 100%;
+    padding: 1rem;
+  }
+}
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.teams {
+  display: flex;
+  justify-content: space-evenly;
+}
+.teams .team {
+  width: 10%;
+  text-align: center;
+  border: 3px solid #565656;
+  margin: 1rem;
+  background-color: #C09F80;
+  cursor: pointer;
+}
+.cards-container {
+  display: flex;
+  flex-flow: column;
+}
+.card {
+  display: flex;
+  height: 10rem;
+  border: 2px solid #C09F80;
+  background-color: #565656;
+  color: #D7CEC7;
+  margin: 1rem;
+  justify-content: space-between;
+}
+.card .name {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  font-family: 'Bitter', serif;
+  font-size: 3rem;
+}
+.card .blurb {
+  color: #C09F80;
+  margin: 1rem;
+  width: 60%;
+}
+.card img {
+  width: 200px;
+}
+.hero {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 10%;
+}
+.hero p {
+  width: 65%;
+  margin-bottom: 5%;
+  text-align: justify;
+}
+@media (max-width: 800px) {
+  .hero p {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .hero p {
+    width: 90%;
+  }
+}
+.hero .signUpBtn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 10rem;
+  height: 10rem;
+  border: 1rem solid #C09F80;
+  padding-bottom: 5%;
+  background-color: #76323F;
+  color: #D7CEC7;
+  font-size: 2rem;
+  font-family: 'Bitter', serif;
+}
+.banner {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+.bottomSec .infoDiv {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  border-bottom: 2px solid #76323F;
+}
+@media (max-width: 800px) {
+  .bottomSec .infoDiv {
+    flex-flow: column-reverse;
+  }
+}
+.bottomSec .infoDiv div {
+  margin: 20px;
+}
+@media (max-width: 800px) {
+  .bottomSec .infoDiv div {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.bottomSec .infoDiv div img {
+  margin-top: 20px;
+  width: 400px;
+}
+.bottomSec .infoDiv p {
+  margin: 40px;
+}
+.middle {
+  flex-flow: row-reverse;
 }

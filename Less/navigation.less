@@ -1,1 +1,67 @@
 //nav bar styles
+
+
+.headerNav {
+    position: relative;
+    overflow: hidden;
+    border: 3px solid @accent;
+    display: flex;
+    flex-flow: column;
+    margin: 2%;
+    @media @phone {
+        border: none;
+        margin: 0;
+    }
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        // height: auto;
+        opacity: 0.35;
+        @media @phone {
+
+        }
+    }
+    nav {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        @media @phone {
+            flex-flow: column;
+            text-align: center;
+            border: none;
+        }
+    }
+}
+
+.fullName {
+    position:relative;
+    text-align: center;
+    padding: 5%;
+    @media @tablet{
+        display: none;
+    }
+}
+.logo {
+    position: relative;
+    display:none;
+    font-size: 6rem;
+    @media @tablet {
+        display: flex;
+        text-align: center;
+        height: 10rem;
+        justify-content: center;
+        align-items: center;
+    }
+    p {
+        @media @tablet {
+            border: 3px solid @accent;
+            border-radius: 100%;
+            padding: 1rem;
+        }
+    }
+
+}
+    

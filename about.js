@@ -45,7 +45,7 @@ class Member {
     }
     selectCard(){
       console.log("card selected")
-      this.cardElement.style.display = "block";
+      this.cardElement.style.display = "flex";
     }
   
   }

@@ -131,11 +131,15 @@ table {
 body {
   background: #D7CEC7;
   color: #565656;
-  margin: 1rem;
   font-family: 'Raleway', sans-serif;
 }
+@media (max-width: 500px) {
+  body {
+    margin: 0;
+  }
+}
 h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #76323F;
   font-family: 'Bitter', serif;
 }
@@ -144,30 +148,51 @@ a {
   text-decoration: none;
   padding: 0.5rem;
   font-weight: bold;
+  margin: 0.5rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  a {
+    background-color: #565656;
+    margin: 0;
+    color: #D7CEC7;
+  }
 }
 a:hover {
-  border: 0.2rem solid #76323F;
+  border: 3px solid #76323F;
+}
+@media (max-width: 800px) {
+  a:hover {
+    border: 3px solid #76323F;
+  }
+}
+@media (max-width: 500px) {
+  a:hover {
+    border: none;
+    border-bottom: 0.2rem solid #C09F80;
+    border-top: 0.2rem solid #C09F80;
+  }
 }
 /*components*/
 .headerNav {
   position: relative;
   overflow: hidden;
-  height: 30rem;
   border: 3px solid #76323F;
+  display: flex;
+  flex-flow: column;
+  margin: 2%;
 }
-.headerNav h1 {
-  position: relative;
-  width: 100%;
-  text-align: center;
-  height: 16rem;
-  margin-top: 9rem;
+@media (max-width: 500px) {
+  .headerNav {
+    border: none;
+    margin: 0;
+  }
 }
 .headerNav img {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
   opacity: 0.35;
 }
 .headerNav nav {
@@ -175,6 +200,44 @@ a:hover {
   width: 100%;
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 500px) {
+  .headerNav nav {
+    flex-flow: column;
+    text-align: center;
+    border: none;
+  }
+}
+.fullName {
+  position: relative;
+  text-align: center;
+  padding: 5%;
+}
+@media (max-width: 800px) {
+  .fullName {
+    display: none;
+  }
+}
+.logo {
+  position: relative;
+  display: none;
+  font-size: 6rem;
+}
+@media (max-width: 800px) {
+  .logo {
+    display: flex;
+    text-align: center;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 800px) {
+  .logo p {
+    border: 3px solid #76323F;
+    border-radius: 100%;
+    padding: 1rem;
+  }
 }
 footer {
   text-align: center;
@@ -192,6 +255,7 @@ footer {
   border: 3px solid #565656;
   margin: 1rem;
   background-color: #C09F80;
+  cursor: pointer;
 }
 .cards-container {
   display: flex;
@@ -225,45 +289,67 @@ footer {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 2rem;
+  padding: 10%;
 }
 .hero p {
-  width: 60%;
-  margin: 2%;
+  width: 65%;
+  margin-bottom: 5%;
+  text-align: justify;
+}
+@media (max-width: 800px) {
+  .hero p {
+    width: 75%;
+  }
+}
+@media (max-width: 500px) {
+  .hero p {
+    width: 90%;
+  }
 }
 .hero .signUpBtn {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 20%;
+  width: 10rem;
   height: 10rem;
   border: 1rem solid #C09F80;
+  padding-bottom: 5%;
   background-color: #76323F;
   color: #D7CEC7;
   font-size: 2rem;
   font-family: 'Bitter', serif;
-  margin-bottom: 2%;
 }
 .banner {
   width: 100%;
   height: auto;
-  border: 3px solid #C09F80;
+  opacity: 0.5;
 }
 .bottomSec .infoDiv {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  padding: 2%;
   border-bottom: 2px solid #76323F;
 }
-.bottomSec .infoDiv .infoDiv:last-child {
-  border-bottom: 2px solid #D7CEC7;
+@media (max-width: 800px) {
+  .bottomSec .infoDiv {
+    flex-flow: column-reverse;
+  }
 }
-.bottomSec .infoDiv img {
-  width: 30%;
+.bottomSec .infoDiv div {
+  margin: 20px;
+}
+@media (max-width: 800px) {
+  .bottomSec .infoDiv div {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.bottomSec .infoDiv div img {
+  margin-top: 20px;
+  width: 400px;
 }
 .bottomSec .infoDiv p {
-  width: 40%;
+  margin: 40px;
 }
 .middle {
   flex-flow: row-reverse;

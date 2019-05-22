@@ -182,12 +182,44 @@ footer {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
-.card-container {
+.teams {
   display: flex;
+  justify-content: space-evenly;
 }
-.card-container .card {
+.teams .team {
+  width: 10%;
+  text-align: center;
+  border: 3px solid #565656;
+  margin: 1rem;
+  background-color: #C09F80;
+}
+.cards-container {
   display: flex;
-  width: 40%;
+  flex-flow: column;
+}
+.card {
+  display: flex;
+  height: 10rem;
+  border: 2px solid #C09F80;
+  background-color: #565656;
+  color: #D7CEC7;
+  margin: 1rem;
+  justify-content: space-between;
+}
+.card .name {
+  display: flex;
+  align-items: flex-end;
+  width: 20%;
+  font-family: 'Bitter', serif;
+  font-size: 3rem;
+}
+.card .blurb {
+  color: #C09F80;
+  margin: 1rem;
+  width: 60%;
+}
+.card img {
+  width: 200px;
 }
 .hero {
   display: flex;

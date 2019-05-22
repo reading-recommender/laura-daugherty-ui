@@ -1,7 +1,42 @@
-.card-container {
+.teams {
     display: flex;
-    .card {
+    justify-content: space-evenly;
+    .team {
+        // display: flex;
+        width: 10%;
+        text-align: center;
+        border: 3px solid @dark;
+        margin: 1rem;
+        background-color: @mid1;
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: column;
+
+}
+.card {
+    display: flex;
+    height: 10rem;
+    border: 2px solid @mid1;
+    background-color: @dark;
+    color: @light1;
+    margin: 1rem;
+    justify-content: space-between; 
+    .name {
         display: flex;
-        width: 40%;
+        align-items: flex-end;
+        width: 20%;
+        font-family: 'Bitter', serif;
+        font-size: 3rem;
+    }
+    .blurb {
+        color: @mid1;
+        margin: 1rem;
+        width: 60%;
+    }
+    img {
+        width: 200px;
     }
 }

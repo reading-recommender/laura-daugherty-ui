@@ -1,26 +1,52 @@
 .hero {
-    width: 100%;
-
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 2rem;
     p {
-
+        width: 60%;
+        margin: 2%;
+    }
+    .signUpBtn {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+        height: 10rem;
+        border: 1rem solid @mid1;
+        background-color: @accent;
+        color: @light1;
+        font-size: 2rem;
+        font-family: 'Bitter', serif;
+        margin-bottom: 2%;
+        
     }
 }
 
 .banner {
     width: 100%;
     height: auto;
+    border: 3px solid @mid1;
 }
 .bottomSec {
     .infoDiv {
         display: flex;
-        width: 100%;
         justify-content: space-between;
+        align-self: center;
+        padding: 2%;
+        border-bottom: 2px solid @accent;
+
+        .infoDiv:last-child {
+            border-bottom: 2px solid @light1;
+        }
         img {
-            width: 30rem;
+            width: 30%;
         }
         p {
             width: 40%;
-            color: blue;
         }
     }
+}
+.middle {
+    flex-flow: row-reverse;
 }

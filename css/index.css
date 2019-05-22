@@ -176,6 +176,12 @@ a:hover {
   display: flex;
   justify-content: space-around;
 }
+footer {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
 .card-container {
   display: flex;
 }
@@ -184,21 +190,49 @@ a:hover {
   width: 40%;
 }
 .hero {
-  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 2rem;
+}
+.hero p {
+  width: 60%;
+  margin: 2%;
+}
+.hero .signUpBtn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  height: 10rem;
+  border: 1rem solid #C09F80;
+  background-color: #76323F;
+  color: #D7CEC7;
+  font-size: 2rem;
+  font-family: 'Bitter', serif;
+  margin-bottom: 2%;
 }
 .banner {
   width: 100%;
   height: auto;
+  border: 3px solid #C09F80;
 }
 .bottomSec .infoDiv {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  align-self: center;
+  padding: 2%;
+  border-bottom: 2px solid #76323F;
+}
+.bottomSec .infoDiv .infoDiv:last-child {
+  border-bottom: 2px solid #D7CEC7;
 }
 .bottomSec .infoDiv img {
-  width: 30rem;
+  width: 30%;
 }
 .bottomSec .infoDiv p {
   width: 40%;
-  color: blue;
+}
+.middle {
+  flex-flow: row-reverse;
 }

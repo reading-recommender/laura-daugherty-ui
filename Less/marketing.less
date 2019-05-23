@@ -3,14 +3,12 @@
     flex-flow: column;
     align-items: center;
     padding: 40px;
-    line-height: 1.5;
     p {
-        width: 65%;
         margin-bottom: 30px;
+        width: 65%;
         text-align: center;
-        font-size: @big1;
-
-
+        font-weight: 600;
+        .sizeHeight(@big1, 1.5);
         @media @tablet{
             width: 75%;
         }
@@ -21,32 +19,27 @@
     .signUpBtn {
         display: flex;
         align-items: center;
-        text-align: center;
         width: 10rem;
         height: 10rem;
         border-radius: 6px;
-        background-color: @accent;
-        color: @light1;
-        font-size: @big2;
-        font-family: 'Bitter', serif;    
-        cursor: pointer;    
         padding: 10px;
         border: 5px solid @light1;
-        
+        background-color: @accent;
+        color: @light1;
+        text-align: center;
+        .sizeHeight(@big2, 1.3);
+        .fancyFont;
+        cursor: pointer;    
     }
     .signUpBtn:hover {
         border: 5px solid @mid1;
         color: @mid1;
-
     }
-
 }
-
 .banner {
+    opacity: .4;
     width: 100%;
-    opacity: .5;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    .tbMargin(20px, 20px);
 }
 .bottomSec {
     .infoDiv {
@@ -58,26 +51,18 @@
         padding-bottom: 40px;
         @media @tablet {
             flex-flow: column;
-        
         }
-
         div {
             margin: 20px;
             @media @tablet{
-                margin-right:auto;
-                margin-left:auto;
+                .lrMargin(auto, auto);
             }
             img {
                 margin-top: 20px;
                 width: 400px;
                 @media @phone {
                     width: 300px;
-
                 }
-
-            }
-            @media @tablet {
-                
             }
         }
         h3 {
@@ -85,13 +70,12 @@
             margin-left: 20px;
             @media @tablet {
                 margin-left: 40px;
-
             }
         }
-
         p {
             margin: 40px;
-            line-height: 1.5;
+            line-height: 1.6;
+            .easyRead();
             text-align: justify;
         }
     }
@@ -104,14 +88,11 @@
             flex-flow: column;
         }
         h3 {
-            margin-left:0px;
-            margin-right: 20px;
+            .easyRead();
+            .lrMargin(0px, 20px);
             @media @tablet {
-                margin-right: 0px;
-                margin-left: 40px;
-
+                .lrMargin(40px, 0px);
             }
-            
         }
     }
 }

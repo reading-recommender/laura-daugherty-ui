@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 5%;
+    padding: 40px;
     p {
         width: 65%;
         margin-bottom: 30px;
@@ -22,19 +22,29 @@
         text-align: center;
         width: 10rem;
         height: 10rem;
-        border: 1rem solid @mid1;
-        padding-bottom: 5%;
+        border-radius: 6px;
         background-color: @accent;
         color: @light1;
         font-size: @big2;
-        font-family: 'Bitter', serif;        
+        font-family: 'Bitter', serif;    
+        cursor: pointer;    
+        padding: 10px;
+        
     }
+    .signUpBtn:hover {
+        border: 5px solid @mid1;
+        color: @mid1;
+
+    }
+
 }
 
 .banner {
     width: 100%;
     height: auto;
     opacity: .5;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .bottomSec {
     .infoDiv {
@@ -42,6 +52,8 @@
         justify-content: space-between;
         align-self: center;
         border-bottom: 2px solid @accent;
+        margin-top: 40px;
+        padding-bottom: 40px;
         @media @tablet {
             flex-flow: column;
         
@@ -74,6 +86,9 @@
         p {
             margin: 40px;
         }
+    }
+    .top {
+        margin-top: 0px;
     }
     .middle {
         flex-flow: row-reverse;

@@ -131,7 +131,10 @@ table {
 body {
   background: #D7CEC7;
   color: #565656;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Raleway', sans-serif;
+  max-width: 1000px;
 }
 @media (max-width: 500px) {
   body {
@@ -143,6 +146,11 @@ h1 {
   color: #76323F;
   font-family: 'Bitter', serif;
 }
+h3 {
+  font-size: 2rem;
+  color: #76323F;
+  font-family: 'Bitter', serif;
+}
 a {
   color: #76323F;
   text-decoration: none;
@@ -150,6 +158,7 @@ a {
   font-weight: bold;
   margin: 0.5rem;
   text-align: center;
+  font-size: 1rem;
 }
 @media (max-width: 500px) {
   a {
@@ -275,7 +284,7 @@ footer {
   align-items: flex-end;
   width: 20%;
   font-family: 'Bitter', serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .card .blurb {
   color: #C09F80;
@@ -285,16 +294,21 @@ footer {
 .card img {
   width: 200px;
 }
+.book {
+  height: 100px;
+  width: auto;
+}
 .hero {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 10%;
+  padding: 5%;
 }
 .hero p {
   width: 65%;
-  margin-bottom: 5%;
-  text-align: justify;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.3rem;
 }
 @media (max-width: 800px) {
   .hero p {
@@ -332,7 +346,7 @@ footer {
 }
 @media (max-width: 800px) {
   .bottomSec .infoDiv {
-    flex-flow: column-reverse;
+    flex-flow: column;
   }
 }
 .bottomSec .infoDiv div {
@@ -348,9 +362,33 @@ footer {
   margin-top: 20px;
   width: 400px;
 }
+.bottomSec .infoDiv h3 {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+@media (max-width: 800px) {
+  .bottomSec .infoDiv h3 {
+    margin-left: 40px;
+  }
+}
 .bottomSec .infoDiv p {
   margin: 40px;
 }
-.middle {
+.bottomSec .middle {
   flex-flow: row-reverse;
+}
+@media (max-width: 800px) {
+  .bottomSec .middle {
+    flex-flow: column;
+  }
+}
+.bottomSec .middle h3 {
+  margin-left: 0px;
+  margin-right: 20px;
+}
+@media (max-width: 800px) {
+  .bottomSec .middle h3 {
+    margin-right: 0px;
+    margin-left: 40px;
+  }
 }

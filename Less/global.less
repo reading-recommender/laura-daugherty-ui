@@ -2,17 +2,26 @@
 body {
     background: @light1;
     color: @dark;
-    // margin: 1rem;
+    margin-left:auto;
+    margin-right:auto;
     font-family: 'Raleway', sans-serif;
+    max-width: 1000px;
     @media @phone {
         margin: 0;
+        
     }
 }
 h1 {
-    font-size: 5rem;
+    font-size: @big3;
     color: @accent;
     font-family: 'Bitter', serif;
     
+}
+h3 {
+    font-size: @big2;
+    color: @accent;
+    font-family: 'Bitter', serif;
+
 }
 
 a {
@@ -22,6 +31,7 @@ a {
     font-weight: bold;
     margin: .5rem;
     text-align: center;
+    font-size: @big;
     @media @phone {
         background-color: @dark;
         margin: 0;

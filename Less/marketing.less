@@ -3,11 +3,13 @@
     flex-flow: column;
     align-items: center;
     padding: 40px;
+    line-height: 1.5;
     p {
         width: 65%;
         margin-bottom: 30px;
         text-align: center;
         font-size: @big1;
+
 
         @media @tablet{
             width: 75%;
@@ -41,8 +43,6 @@
 
 .banner {
     width: 100%;
-    height: auto;
-    min-width: 650px;
     opacity: .5;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -69,6 +69,10 @@
             img {
                 margin-top: 20px;
                 width: 400px;
+                @media @phone {
+                    width: 300px;
+
+                }
 
             }
             @media @tablet {
@@ -86,6 +90,8 @@
 
         p {
             margin: 40px;
+            line-height: 1.5;
+            text-align: justify;
         }
     }
     .top {

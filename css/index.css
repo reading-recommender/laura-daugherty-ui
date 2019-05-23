@@ -247,6 +247,13 @@ footer {
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 500px) {
+  footer a {
+    font-size: 0.8rem;
+    background-color: #D7CEC7;
+    color: #565656;
+  }
+}
 .teams {
   display: flex;
   justify-content: space-evenly;
@@ -355,6 +362,7 @@ footer {
   flex-flow: column;
   align-items: center;
   padding: 40px;
+  line-height: 1.5;
 }
 .hero p {
   width: 65%;
@@ -392,8 +400,6 @@ footer {
 }
 .banner {
   width: 100%;
-  height: auto;
-  min-width: 650px;
   opacity: 0.5;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -424,6 +430,11 @@ footer {
   margin-top: 20px;
   width: 400px;
 }
+@media (max-width: 500px) {
+  .bottomSec .infoDiv div img {
+    width: 300px;
+  }
+}
 .bottomSec .infoDiv h3 {
   margin-top: 40px;
   margin-left: 20px;
@@ -435,6 +446,8 @@ footer {
 }
 .bottomSec .infoDiv p {
   margin: 40px;
+  line-height: 1.5;
+  text-align: justify;
 }
 .bottomSec .top {
   margin-top: 0px;

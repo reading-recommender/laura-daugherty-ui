@@ -152,10 +152,8 @@ h3 {
   font-family: 'Bitter', serif;
 }
 a {
-  color: #76323F;
-  text-decoration: none;
+  color: #565656;
   padding: 0.5rem;
-  font-weight: bold;
   margin: 0.5rem;
   text-align: center;
   font-size: 1rem;
@@ -168,18 +166,13 @@ a {
   }
 }
 a:hover {
-  border: 3px solid #76323F;
-}
-@media (max-width: 800px) {
-  a:hover {
-    border: 3px solid #76323F;
-  }
+  color: #76323F;
 }
 @media (max-width: 500px) {
   a:hover {
-    border: none;
-    border-bottom: 0.2rem solid #C09F80;
-    border-top: 0.2rem solid #C09F80;
+    border-bottom: 3px solid #C09F80;
+    border-top: 3px solid #C09F80;
+    color: #C09F80;
   }
 }
 /*components*/
@@ -257,14 +250,17 @@ footer {
 .teams {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .teams .team {
-  width: 10%;
-  text-align: center;
-  border: 3px solid #565656;
+  display: flex;
   margin: 1rem;
-  background-color: #C09F80;
   cursor: pointer;
+  text-align: center;
+}
+.teams .team:hover {
+  text-decoration: underline;
+  color: #76323F;
 }
 .cards-container {
   display: flex;
@@ -272,37 +268,93 @@ footer {
 }
 .card {
   display: flex;
-  height: 10rem;
   border: 2px solid #C09F80;
   background-color: #565656;
   color: #D7CEC7;
   margin: 1rem;
+  padding: 1rem;
   justify-content: space-between;
+  line-height: 1.3;
+}
+@media (max-width: 800px) {
+  .card {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-flow: column;
+    align-items: center;
+  }
 }
 .card .name {
   display: flex;
   align-items: flex-end;
   width: 20%;
   font-family: 'Bitter', serif;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+@media (max-width: 800px) {
+  .card .name {
+    width: auto;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+  }
 }
 .card .blurb {
-  color: #C09F80;
-  margin: 1rem;
+  display: flex;
+  flex-flow: column;
+  color: #D7CEC7;
+  margin-right: 1rem;
+  margin-left: 1rem;
   width: 60%;
+  text-align: justify;
+}
+@media (max-width: 800px) {
+  .card .blurb {
+    width: 80%;
+  }
+}
+.card .blurb a {
+  color: #D7CEC7;
+  cursor: pointer;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 2rem;
+  border: none;
+}
+@media (max-width: 800px) {
+  .card .blurb a {
+    margin: 2rem;
+  }
+}
+.card .blurb .aa {
+  border-radius: 6px;
+  background: #76323F;
+  color: #C09F80;
+  max-width: 60%;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 800px) {
+  .card .blurb .aa {
+    margin-bottom: 0rem;
+  }
+}
+.card .blurb .aa:hover {
+  border: 2px solid #C09F80;
+  color: #D7CEC7;
+  text-decoration: underline;
 }
 .card img {
   width: 200px;
-}
-.book {
-  height: 100px;
-  width: auto;
+  max-height: 10rem;
 }
 .hero {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding: 5%;
+  padding: 40px;
 }
 .hero p {
   width: 65%;
@@ -326,23 +378,33 @@ footer {
   text-align: center;
   width: 10rem;
   height: 10rem;
-  border: 1rem solid #C09F80;
-  padding-bottom: 5%;
+  border-radius: 6px;
   background-color: #76323F;
   color: #D7CEC7;
   font-size: 2rem;
   font-family: 'Bitter', serif;
+  cursor: pointer;
+  padding: 10px;
+}
+.hero .signUpBtn:hover {
+  border: 5px solid #C09F80;
+  color: #C09F80;
 }
 .banner {
   width: 100%;
   height: auto;
+  min-width: 650px;
   opacity: 0.5;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .bottomSec .infoDiv {
   display: flex;
   justify-content: space-between;
   align-self: center;
   border-bottom: 2px solid #76323F;
+  margin-top: 40px;
+  padding-bottom: 40px;
 }
 @media (max-width: 800px) {
   .bottomSec .infoDiv {
@@ -373,6 +435,9 @@ footer {
 }
 .bottomSec .infoDiv p {
   margin: 40px;
+}
+.bottomSec .top {
+  margin-top: 0px;
 }
 .bottomSec .middle {
   flex-flow: row-reverse;

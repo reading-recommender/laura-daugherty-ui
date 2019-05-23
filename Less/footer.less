@@ -1,6 +1,12 @@
 footer {
     text-align: center;
-    font-size: @small;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    a {
+        @media @phone {
+            font-size: @small;
+            background-color: @light1;
+            color: @dark;
+        }   
+    }
 }

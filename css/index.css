@@ -253,8 +253,8 @@ footer {
   width: auto;
 }
 .teams .team {
-  margin: 1rem;
-  font-weight: bold;
+  margin: 2.5rem 1rem 2.5rem 1rem;
+  font-weight: 600;
   text-align: center;
   cursor: pointer;
 }
@@ -277,7 +277,8 @@ footer {
   color: #D7CEC7;
   border: 2px solid #C09F80;
   padding: 1rem;
-  margin: 1rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
 }
 @media (max-width: 800px) {
   .cards-container .card {
